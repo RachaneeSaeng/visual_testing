@@ -3,7 +3,6 @@ module.exports = {
   setupFilesAfterEnv: ["./setupTests.js"],
   transform: {
     "^.+\\.js$": "babel-jest",
-    "^.+\\.css$": "jest-transform-scss",
-    "^.+\\.scss$": "jest-transform-scss"
+    ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform"
   }
 };
