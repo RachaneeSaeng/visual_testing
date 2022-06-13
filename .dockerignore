@@ -10,4 +10,7 @@
 !setupTests.js
 !setupTests.js
 !jest-css-modules-transform-config.js
+
+# to allow everything in node_modules (to save time to restore packages) to be copied but puppeteer
 !node_modules
+node_modules/puppeteer
