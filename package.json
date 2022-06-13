@@ -31,8 +31,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest --updateSnapshot",
+    "test-in-docker:dev": "make local_test",
+    "test-in-docker:ci": "make ci_test"
   },
   "devDependencies": {
     "jest-css-modules-transform": "^4.4.2",

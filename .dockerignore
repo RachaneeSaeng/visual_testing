@@ -1,0 +1,12 @@
+# Ignore all files by default
+*
+
+# White list only the required files
+!src/
+!package.json
+!package-lock.json
+!.babelrc
+!jest.config.js
+!setupTests.js
+!setupTests.js
+!jest-css-modules-transform-config.js

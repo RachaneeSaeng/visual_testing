@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  # Watch the src directory for any changes.
+  local_test:
+    build:
+      context: .
+    command: npm run test:watch
+    volumes:
+      - './src:/app/src'
+
+  # What's there is there. No second chances in CI.
+  ci_test:
+    user: root
+    build:
+      context: .
+    environment:
+      - CI=true
+    volumes:
+      - './src:/app/src'
+      # - './node_modules:/app/node_modules'
+    command: npm run test
+    # command: bash -c "
+    #   npm uninstall puppeteer
+    #   npm install puppeteer --unsafe-perm=true --allow-root
+    #   && npm run test
+    #   "
