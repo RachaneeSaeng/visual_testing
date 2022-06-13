@@ -21,9 +21,6 @@
     ]
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^13.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "4.0.3"
@@ -36,6 +33,9 @@
     "test-in-docker:ci": "make ci_test"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^13.2.1",
     "jest-css-modules-transform": "^4.4.2",
     "jest-image-snapshot": "^2.12.0",
     "jsdom-screenshot": "^3.2.0",
