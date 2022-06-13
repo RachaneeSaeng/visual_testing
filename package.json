@@ -29,6 +29,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "test-in-docker:dev": "make local_test",
     "test-in-docker:ci": "make ci_test"
   },
