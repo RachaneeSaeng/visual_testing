@@ -10,3 +10,4 @@
 !setupTests.js
 !setupTests.js
 !jest-css-modules-transform-config.js
+!node_modules
