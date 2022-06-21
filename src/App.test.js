@@ -4,11 +4,11 @@ import { generateImage } from "jsdom-screenshot";
 
 import App from "./App";
 
+const desktopViewport = { viewport: { width: 1280, height: 800 } };
+const mobileViewport = { viewport: { width: 390, height: 800 } };
+
 test("renders", async () => {
   render(<App />);
-  const welcomeText = screen.getByText(/Visual Testing/i);
-  expect(welcomeText).toBeInTheDocument();
-
-  const screenshot = await generateImage();
-  expect(screenshot).toMatchImageSnapshot();
+  expect(await generateImage(desktopViewport)).toMatchImageSnapshot();
+  expect(await generateImage(mobileViewport)).toMatchImageSnapshot();
 });
